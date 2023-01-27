@@ -38,15 +38,27 @@ void bubbleSort(int a[],int n){
 
 int i,j;
 int sorted;
-  for(i=1;i<n;i++)
+  sorted=0;
+  for(i=1;i<n;i++){
 for(j=0;j<n-i;j++){
-  if(a[j]>a[j+1])
+  if(a[j]>a[j+1]){
   swap(&a[j],&a[j+1]);
-  display(a,n);
- }
+  sorted = 1;}
+    display(a,n);
+ }if(sorted==0) break;}
   
 }
 
+int Isprime(int a){
+  int i,count=0;
+  for(i=1;i<a;i++){
+    if(a%i==0){
+      count++;
+    }
+  }
+  if(count==1)return 1;
+  else return 0;
+}
 
 
 
