@@ -23,7 +23,7 @@ a[i]=atoi(argv[i+1]);
    //insertion(a,N);
 
   // selectionSort(a,N);
-   display(a,N);
+   display(prime,N);
       }
  return 0;
 }
