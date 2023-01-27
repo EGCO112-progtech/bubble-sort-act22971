@@ -9,7 +9,6 @@ N=argc-1;
 a=(int*)malloc(sizeof(int)*N);
 int *prime=(int*)malloc(sizeof(int)*N);
 for(i=0;i<N;i++) {
-
 a[i]=atoi(argv[i+1]);
   if(Isprime(a[i])){
     prime[j] = a[i];
@@ -19,13 +18,12 @@ a[i]=atoi(argv[i+1]);
   N = j;
     if(N==0){
   printf("No prime\n");}else{
-
    display(prime,N);
   bubbleSort(prime,N); 
    //insertion(a,N);
 
   // selectionSort(a,N);
-  // display(a,N);
+   display(a,N);
       }
  return 0;
 }
